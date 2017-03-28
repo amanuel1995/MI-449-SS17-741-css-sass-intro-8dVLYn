@@ -1,0 +1,80 @@
+@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,900');
+
+body {
+  background: lighten($base-color1, 45%);
+
+  h1 {
+    font-family: $generic-font-style;
+    font-size: $base-font-size * 2.1;
+    font-weight: $base-font-weight * 9;
+  }
+
+  h2 {
+    font-family: $generic-font-style;
+    font-size: $base-font-size * 1.8;
+    font-weight: $base-font-weight * 7;
+  }
+
+  h3 {
+    font-size: $base-font-size * 1.5;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight * 5;
+  }
+
+  h4 {
+    font-size: $base-font-size * 1.2;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight * 4;
+  }
+
+  h5 {
+    font-size: $base-font-size * 0.9;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight * 2;
+  }
+
+  h6 {
+    font-size: $base-font-size * 0.6;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight;
+  }
+
+  a {
+    font-size: $base-font-size * 0.9;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight * 3;
+    text-decoration: none;
+    color: blue($base-color3);
+  }
+
+  a:hover {
+    color: darken($base-color1, 15%);
+    font-weight: $base-font-weight * 4;
+  }
+
+  button {
+    background: blue($base-color2);
+  }
+
+  img,
+  input[type="text"],
+  textarea {
+    border-radius: $base-border-radius * 1.5;
+    font-family: $generic-font-style;
+  }
+
+  input[type="button"] {
+    border-radius: $base-border-radius * 3;
+  }
+
+  p {
+    font-size: $base-font-size * 1.2;
+    font-family: $generic-font-style;
+    font-weight: $base-font-weight * 3;
+  }
+}
+
+.danger {
+  background: mix($base-color5, $base-color3);
+}
